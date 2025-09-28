@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <script src="https://static.readdy.ai/static/e.js"></script> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Rivel -Restaurant & Nature Retreat | Costa Rica</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6B7280',
+                        secondary: '#D1D5DB'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <style>
+        :where([class^="ri-"])::before {
+            content: "\f3c2";
+        }
+
+        .hero-bg {
+            background-image: url('https://readdy.ai/api/search-image?query=luxury%20tropical%20hotel%20infinity%20pool%20overlooking%20lush%20green%20mountains%20costa%20rica%20sunrise%20golden%20hour%20modern%20architecture%20peaceful%20serene%20atmosphere%20high-end%20resort%20with%20natural%20stone%20elements%20and%20tropical%20vegetation%20creating%20perfect%20harmony%20between%20luxury%20and%20nature&width=1920&height=1080&seq=hero1&orientation=landscape');
+        }
+
+        .experience-bg {
+            background-image: url('https://readdy.ai/api/search-image?query=costa%20rica%20coffee%20plantation%20with%20luxury%20hotel%20guest%20enjoying%20private%20coffee%20tasting%20experience%20surrounded%20by%20lush%20green%20coffee%20plants%20mountain%20backdrop%20golden%20lighting%20professional%20service%20elegant%20presentation&width=800&height=600&seq=exp1&orientation=landscape');
+        }
+
+        .lodge-bg {
+            background-image: url('https://readdy.ai/api/search-image?query=luxury%20eco%20lodge%20bedroom%20with%20floor%20to%20ceiling%20windows%20overlooking%20tropical%20rainforest%20private%20deck%20with%20modern%20furnishings%20natural%20materials%20stone%20and%20wood%20elegant%20interior%20design%20costa%20rica&width=600&height=400&seq=lodge1&orientation=landscape');
+        }
+
+        .restaurant-bg {
+            background-image: url('https://readdy.ai/api/search-image?query=farm%20to%20table%20restaurant%20with%20chef%20preparing%20gourmet%20meal%20using%20fresh%20local%20ingredients%20tropical%20setting%20elegant%20plating%20costa%20rican%20cuisine%20luxury%20dining%20experience&width=600&height=400&seq=rest1&orientation=landscape');
+        }
+
+        .wellness-bg {
+            background-image: url('https://readdy.ai/api/search-image?query=luxury%20spa%20wellness%20retreat%20tropical%20setting%20peaceful%20meditation%20area%20with%20natural%20elements%20stone%20water%20features%20surrounded%20by%20lush%20vegetation%20costa%20rica%20tranquil%20atmosphere&width=600&height=400&seq=well1&orientation=landscape');
+        }
+
+        .adventure-bg {
+            background-image: url('https://readdy.ai/api/search-image?query=professional%20bird%20watching%20guide%20with%20luxury%20hotel%20guest%20using%20high-end%20binoculars%20in%20costa%20rica%20rainforest%20colorful%20tropical%20birds%20in%20natural%20habitat%20exclusive%20wildlife%20experience&width=600&height=400&seq=adv1&orientation=landscape');
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center">
+                    <img src="https://static.readdy.ai/image/58f78bb1829e4a7c83d347e0e23e5611/f0d221e6a14e1ca3393b5180b34d7e91.png" alt="Hotel Rivel" class="h-12 w-auto">
+                </div>
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="#experiences" class="text-gray-700 hover:text-primary transition-colors font-medium">Experiences</a>
+                    <a href="#sanctuaries" class="text-gray-700 hover:text-primary transition-colors font-medium">Rooms</a>
+                    <a href="#culinary" class="text-gray-700 hover:text-primary transition-colors font-medium">Restaurant</a>
+                    <a href="#gallery" class="text-gray-700 hover:text-primary transition-colors font-medium">Photos</a>
+                    <a href="#story" class="text-gray-700 hover:text-primary transition-colors font-medium">Our Place</a>
+                    <a href="#blog" class="text-gray-700 hover:text-primary transition-colors font-medium">Journal</a>
+                    <button class="bg-primary text-white px-6 py-3 !rounded-button hover:bg-primary/90 transition-colors font-medium whitespace-nowrap">Check Availability</button>
+                </div>
+                <div class="lg:hidden w-6 h-6 flex items-center justify-center">
+                    <i class="ri-menu-line text-xl"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="hero-bg bg-cover bg-center min-h-screen flex items-center relative">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="relative z-10 w-full">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="max-w-2xl">
+                    <h1 class="font-['Playfair_Display'] text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight">Hotel Rivel -Restaurant & Nature Retreat</h1>
+                    <p class="text-xl text-white/90 mb-8 leading-relaxed">Discover the ultimate Costa Rica experience where luxury meets nature. A sanctuary of tranquility nestled in the heart of Turrialba's pristine wilderness.</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-white text-primary px-8 py-4 !rounded-button hover:bg-gray-50 transition-colors font-semibold whitespace-nowrap">Book Your Escape</button>
+                        <button class="border-2 border-white text-white px-8 py-4 !rounded-button hover:bg-white hover:text-primary transition-colors font-semibold whitespace-nowrap">Explore Experiences</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+            <div class="w-6 h-6 flex items-center justify-center">
+                <i class="ri-arrow-down-line text-2xl"></i>
+            </div>
+        </div>
+    </section>
+    <div class="fixed bottom-8 right-8 z-40">
+        <button class="bg-primary text-white px-6 py-3 !rounded-button shadow-lg hover:bg-primary/90 transition-colors font-medium whitespace-nowrap flex items-center gap-2">
+<div class="w-4 h-4 flex items-center justify-center">
+<i class="ri-calendar-line"></i>
+</div>
+Check Availability
+</button>
+    </div>
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-['Playfair_Display'] text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Your Journey Awaits</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Experience the perfect harmony of luxury, adventure, and tranquility in Costa Rica's most exclusive nature retreat</p>
+            </div>
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+                        <i class="ri-award-line text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="font-['Playfair_Display'] text-2xl font-semibold text-gray-900 mb-4">Professional Excellence</h3>
+                    <p class="text-gray-600 leading-relaxed">World-class service standards with personalized attention from our dedicated Costa Rican team, ensuring every moment exceeds expectations.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-16 h-16 bg-secondary/10 rounded-xl flex items-center justify-center mb-6">
+                        <i class="ri-heart-line text-2xl text-secondary"></i>
+                    </div>
+                    <h3 class="font-['Playfair_Display'] text-2xl font-semibold text-gray-900 mb-4">Authentic Joy</h3>
+                    <p class="text-gray-600 leading-relaxed">Immerse yourself in vibrant Costa Rican culture with unique activities that celebrate the true spirit of Pura Vida.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+                        <i class="ri-compass-line text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="font-['Playfair_Display'] text-2xl font-semibold text-gray-900 mb-4">Adventure & Discovery</h3>
+                    <p class="text-gray-600 leading-relaxed">Explore pristine wilderness through curated experiences that reveal the hidden treasures of Turrialba's natural paradise.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-16 h-16 bg-secondary/10 rounded-xl flex items-center justify-center mb-6">
+                        <i class="ri-leaf-line text-2xl text-secondary"></i>
+                    </div>
+                    <h3 class="font-['Playfair_Display'] text-2xl font-semibold text-gray-900 mb-4">Sanctuary & Wellness</h3>
+                    <p class="text-gray-600 leading-relaxed">Find your perfect retreat in our tranquil spaces designed for rejuvenation, meditation, and deep connection with nature.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+                        <i class="ri-sun-line text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="font-['Playfair_Display'] text-2xl font-semibold text-gray-900 mb-4">Ultimate Relaxation</h3>
+                    <p class="text-gray-600 leading-relaxed">Unwind in exclusive privacy with serene spaces, infinity pool views, and the gentle sounds of nature as your soundtrack.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-16 h-16 bg-secondary/10 rounded-xl flex items-center justify-center mb-6">
+                        <i class="ri-earth-line text-2xl text-secondary"></i>
+                    </div>
+                    <h3 class="font-['Playfair_Display'] text-2xl font-semibold text-gray-900 mb-4">Costa Rica Experience</h3>
+                    <p class="text-gray-600 leading-relaxed">Connect with local sustainability initiatives while enjoying world-class amenities in harmony with the environment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sanctuaries" class="py-24">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-['Playfair_Display'] text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Luxury Sanctuaries</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Private lodges designed for ultimate comfort and connection with nature</p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div class="group">
+                    <div class="lodge-bg bg-cover bg-center h-80 rounded-2xl mb-6 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors"></div>
+                        <div class="absolute top-6 left-6">
+                            <span class="bg-white/90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">Sky Lodge</span>
+                        </div>
+                    </div>
+                    <h3 class="font-['Playfair_Display'] text-3xl font-semibold text-gray-900 mb-4">Sky Lodge</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Elevated sanctuary with panoramic mountain views, private deck, and floor-to-ceiling windows. Features premium linens, natural stone elements, and direct access to hiking trails.</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-4 text-sm text-gray-500">
+                            <span class="flex items-center gap-1">
+<div class="w-4 h-4 flex items-center justify-center">
+<i class="ri-user-line"></i>
+</div>
+2 Guests
+</span>
+                            <span class="flex items-center gap-1">
+<div class="w-4 h-4 flex items-center justify-center">
+<i class="ri-landscape-line"></i>
+</div>
+Mountain View
+</span>
+                        </div>
+                        <button class="text-primary font-semibold hover:text-primary/80 transition-colors whitespace-nowrap">View Details</button>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="restaurant-bg bg-cover bg-center h-80 rounded-2xl mb-6 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors"></div>
+                        <div class="absolute top-6 left-6">
+                            <span class="bg-white/90 text-gray-900 px-4 py-2 rounded-full text-sm font-medium">River Lodge</span>
+                        </div>
+                    </div>
+                    <h3 class="font-['Playfair_Display'] text-3xl font-semibold text-gray-900 mb-4">River Lodge</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Riverside retreat with the gentle sounds of flowing water, private terrace, and immersive rainforest views. Designed with sustainable materials and modern luxury amenities.</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-4 text-sm text-gray-500">
+                            <span class="flex items-center gap-1">
+<div class="w-4 h-4 flex items-center justify-center">
+<i class="ri-user-line"></i>
+</div>
+2 Guests
+</span>
+                            <span class="flex items-center gap-1">
+<div class="w-4 h-4 flex items-center justify-center">
+<i class="ri-water-percent-line"></i>
+</div>
+River View
+</span>
+                        </div>
+                        <button class="text-primary font-semibold hover:text-primary/80 transition-colors whitespace-nowrap">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experiences" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-['Playfair_Display'] text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Curated Experiences</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Exclusive activities designed to immerse you in Costa Rica's natural wonders</p>
+            </div>
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <div class="experience-bg bg-cover bg-center h-48"></div>
+                    <div class="p-6">
+                        <h3 class="font-['Playfair_Display'] text-xl font-semibold text-gray-900 mb-3">Artisan Coffee Journey</h3>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">Private tour of our organic coffee plantation with expert tasting sessions and roasting demonstrations.</p>
+                        <button class="text-primary font-medium hover:text-primary/80 transition-colors text-sm whitespace-nowrap">Book Experience</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <div class="adventure-bg bg-cover bg-center h-48"></div>
+                    <div class="p-6">
+                        <h3 class="font-['Playfair_Display'] text-xl font-semibold text-gray-900 mb-3">Private Wildlife Discovery</h3>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">Guided bird watching with professional naturalists and high-end optical equipment in pristine habitats.</p>
+                        <button class="text-primary font-medium hover:text-primary/80 transition-colors text-sm whitespace-nowrap">Book Experience</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <div class="wellness-bg bg-cover bg-center h-48"></div>
+                    <div class="p-6">
+                        <h3 class="font-['Playfair_Display'] text-xl font-semibold text-gray-900 mb-3">Wellness Sanctuary</h3>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">Meditation sessions, yoga classes, and spa treatments in natural settings designed for ultimate relaxation.</p>
+                        <button class="text-primary font-medium hover:text-primary/80 transition-colors text-sm whitespace-nowrap">Book Experience</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="culinary" class="py-24">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="font-['Playfair_Display'] text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Farm-to-Table Culinary Excellence</h2>
+                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">Our restaurant showcases the finest Costa Rican cuisine using ingredients grown on our property. Fresh eggs from free-range chickens, organic coffee, and seasonal produce create an authentic culinary journey.</p>
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center gap-3">
+                            <div class="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center">
+                                <i class="ri-check-line text-primary text-sm"></i>
+                            </div>
+                            <span class="text-gray-700">Organic ingredients from our gardens</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center">
+                                <i class="ri-check-line text-primary text-sm"></i>
+                            </div>
+                            <span class="text-gray-700">Private dining experiences available</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center">
+                                <i class="ri-check-line text-primary text-sm"></i>
+                            </div>
+                            <span class="text-gray-700">Wine pairings with local selections</span>
+                        </div>
+                    </div>
+                    <button class="bg-primary text-white px-8 py-4 !rounded-button hover:bg-primary/90 transition-colors font-semibold whitespace-nowrap">Reserve Table</button>
+                </div>
+                <div class="restaurant-bg bg-cover bg-center h-96 rounded-2xl"></div>
+            </div>
+        </div>
+    </section>
+    <section id="gallery" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-['Playfair_Display'] text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Guest Testimonials</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Discover what our guests say about their transformative experiences</p>
+            </div>
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-8 shadow-sm">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="ri-star-fill text-yellow-400"></i>
+                        <i class="ri-star-fill text-yellow-400"></i>
+                        <i class="ri-star-fill text-yellow-400"></i>
+                        <i class="ri-star-fill text-yellow-400"></i>
+                        <i class="ri-star-fill text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6 leading-relaxed">"The peaceful atmosphere and tranquil cabin accommodations exceeded all expectations. The staff's kindness and attention to detail made our stay truly magical."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center">
+                            <i class="ri-user-line text-gray-500"></i>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-gray-900">Sarah Mitchell</div>
+                            <div class="text-sm text-gray-500">New York, USA</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-sm">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="ri-star-fill text-yellow-400"></i>
+                        <i class="ri-star-fill text-yellow-400"></i>
+                        <i class="ri-star-fill text-yellow-400"></i>
+                        <i class="ri-star-fill text-yellow-400"></i>
+                        <i class="ri-star-fill text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6 leading-relaxed">"An extraordinary blend of luxury and nature. The coffee experience and bird watching tours were professionally guided and absolutely unforgettable."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center">
+                            <i class="ri-user-line text-gray-500"></i>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-gray-900">James Rodriguez</div>
+                            <div class="text-sm text-gray-500">London, UK</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-sm">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="ri-star-fill text-yellow-400"></i>
+                        <i class="ri-star-fill text-yellow-400"></i>
+                        <i class="ri-star-fill text-yellow-400"></i>
+                        <i class="ri-star-fill text-yellow-400"></i>
+                        <i class="ri-star-fill text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6 leading-relaxed">"The ultimate Costa Rica experience. Every detail was perfect, from the farm-to-table dining to the exclusive privacy of our lodge. Pure luxury in paradise."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center">
+                            <i class="ri-user-line text-gray-500"></i>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-gray-900">Maria Gonzalez</div>
+                            <div class="text-sm text-gray-500">Toronto, Canada</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="blog" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-['Playfair_Display'] text-4xl font-bold text-gray-900 mb-4">Journal</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Stories from our Costa Rican paradise and insights into sustainable luxury travel</p>
+            </div>
+            <div class="grid lg:grid-cols-3 gap-8">
+                <article class="group cursor-pointer">
+                    <div class="bg-gray-200 h-48 rounded-xl mb-4 overflow-hidden">
+                        <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-300" style="background-image: url('https://readdy.ai/api/search-image?query=costa%20rica%20wildlife%20photography%20colorful%20tropical%20birds%20in%20natural%20rainforest%20habitat%20professional%20nature%20photography%20vibrant%20colors&width=400&height=300&seq=blog1&orientation=landscape');"></div>
+                    </div>
+                    <div class="text-sm text-gray-500 mb-2">December 15, 2024</div>
+                    <h3 class="font-['Playfair_Display'] text-xl font-semibold text-gray-900 mb-3 group-hover:text-primary transition-colors">Discovering Costa Rica's Hidden Bird Species</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Our expert naturalists share insights into the rare and beautiful bird species that call our rainforest home...</p>
+                </article>
+                <article class="group cursor-pointer">
+                    <div class="bg-gray-200 h-48 rounded-xl mb-4 overflow-hidden">
+                        <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-300" style="background-image: url('https://readdy.ai/api/search-image?query=sustainable%20coffee%20farming%20costa%20rica%20organic%20plantation%20eco-friendly%20agriculture%20mountain%20landscape&width=400&height=300&seq=blog2&orientation=landscape');"></div>
+                    </div>
+                    <div class="text-sm text-gray-500 mb-2">December 10, 2024</div>
+                    <h3 class="font-['Playfair_Display'] text-xl font-semibold text-gray-900 mb-3 group-hover:text-primary transition-colors">The Art of Sustainable Coffee Cultivation</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Learn about our commitment to organic farming practices and how we create the perfect cup while protecting the environment...</p>
+                </article>
+                <article class="group cursor-pointer">
+                    <div class="bg-gray-200 h-48 rounded-xl mb-4 overflow-hidden">
+                        <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-300" style="background-image: url('https://readdy.ai/api/search-image?query=luxury%20eco%20lodge%20wellness%20retreat%20meditation%20yoga%20natural%20setting%20costa%20rica%20peaceful%20atmosphere&width=400&height=300&seq=blog3&orientation=landscape');"></div>
+                    </div>
+                    <div class="text-sm text-gray-500 mb-2">December 5, 2024</div>
+                    <h3 class="font-['Playfair_Display'] text-xl font-semibold text-gray-900 mb-3 group-hover:text-primary transition-colors">Wellness Retreats in Nature's Embrace</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Discover how our wellness programs combine luxury amenities with the healing power of Costa Rica's natural environment...</p>
+                </article>
+            </div>
+            <div class="text-center mt-12">
+                <button class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-primary/90 transition-colors font-medium whitespace-nowrap">View All Articles</button>
+            </div>
+        </div>
+    </section>
+    <section id="story" class="py-24">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="wellness-bg bg-cover bg-center h-96 rounded-2xl"></div>
+                <div>
+                    <h2 class="font-['Playfair_Display'] text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Our Story</h2>
+                    <p class="text-xl text-gray-600 mb-6 leading-relaxed">Hotel Rivel is more than a luxury retreat—it's a Costa Rican non-profit organization dedicated to sustainable tourism and community empowerment.</p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">Run entirely by local Costa Ricans, we embody the true spirit of Pura Vida while providing world-class hospitality. Our commitment to environmental conservation and social responsibility ensures that every stay contributes to the preservation
+                        of this natural paradise.</p>
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary mb-2">100%</div>
+                            <div class="text-sm text-gray-600">Costa Rican Operated</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary mb-2">15+</div>
+                            <div class="text-sm text-gray-600">Years of Excellence</div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 rounded-2xl p-6 mb-8">
+                        <div class="flex items-center gap-4">
+                            <img src="https://static.readdy.ai/image/58f78bb1829e4a7c83d347e0e23e5611/2fe814534fce5082f1389fca0b550441.webp" alt="Benjamin Charbonneau" class="w-16 h-16 rounded-full object-cover">
+                            <div>
+                                <h3 class="font-['Playfair_Display'] text-xl font-semibold text-gray-900">Benjamin Charbonneau</h3>
+                                <p class="text-primary font-medium">Owner & Host</p>
+                                <p class="text-gray-600 text-sm mt-1">Passionate about creating unforgettable experiences in Costa Rica's natural paradise</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="bg-primary text-white px-8 py-4 !rounded-button hover:bg-primary/90 transition-colors font-semibold whitespace-nowrap">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+            <h2 class="font-['Playfair_Display'] text-4xl lg:text-5xl font-bold mb-6">Ready for Your Ultimate Escape?</h2>
+            <p class="text-xl text-white/90 mb-12 max-w-3xl mx-auto">Experience the perfect harmony of luxury, nature, and authentic Costa Rican hospitality. Your sanctuary awaits.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-primary px-8 py-4 !rounded-button hover:bg-gray-50 transition-colors font-semibold whitespace-nowrap">Book Your Stay</button>
+                <button class="border-2 border-white text-white px-8 py-4 !rounded-button hover:bg-white hover:text-primary transition-colors font-semibold whitespace-nowrap">Contact Us</button>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="mb-4">
+                        <img src="https://static.readdy.ai/image/58f78bb1829e4a7c83d347e0e23e5611/f0d221e6a14e1ca3393b5180b34d7e91.png" alt="Hotel Rivel" class="h-16 w-auto filter brightness-0 invert">
+                    </div>
+                    <p class="text-gray-400 mb-6 leading-relaxed">Modern tropical luxury retreat in the heart of Costa Rica's pristine wilderness.</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors cursor-pointer">
+                            <i class="ri-facebook-line"></i>
+                        </div>
+                        <div class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors cursor-pointer">
+                            <i class="ri-instagram-line"></i>
+                        </div>
+                        <div class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors cursor-pointer">
+                            <i class="ri-twitter-line"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-white mb-4">Experiences</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Coffee Tours</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Bird Watching</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Wellness Retreats</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Private Dining</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-white mb-4">Accommodations</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Sky Lodge</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">River Lodge</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Restaurant</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Amenities</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-white mb-4">Contact</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center gap-2">
+                            <div class="w-4 h-4 flex items-center justify-center">
+                                <i class="ri-map-pin-line text-sm"></i>
+                            </div>
+                            Turrialba, Costa Rica
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <div class="w-4 h-4 flex items-center justify-center">
+                                <i class="ri-phone-line text-sm"></i>
+                            </div>
+                            +506 2558 1000
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <div class="w-4 h-4 flex items-center justify-center">
+                                <i class="ri-mail-line text-sm"></i>
+                            </div>
+                            info@hotelrivel.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col lg:flex-row justify-between items-center gap-4">
+                    <p class="text-gray-400 text-sm">© 2025 Hotel Rivel. All rights reserved.</p>
+                    <div class="flex items-center gap-6 text-sm text-gray-400">
+                        <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                        <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                        <a href="#" class="hover:text-white transition-colors">Sustainability</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script id="navigation-mobile">
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('.lg\\:hidden');
+            const nav = document.querySelector('nav');
+            let mobileMenuOpen = false;
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenuOpen = !mobileMenuOpen;
+                if (mobileMenuOpen) {
+                    const mobileMenu = document.createElement('div');
+                    mobileMenu.className = 'lg:hidden bg-white border-t border-gray-100 py-4';
+                    mobileMenu.innerHTML = `
+<div class="flex flex-col space-y-4 px-6">
+<a href="#experiences" class="text-gray-700 hover:text-primary transition-colors font-medium">Experiences</a>
+<a href="#sanctuaries" class="text-gray-700 hover:text-primary transition-colors font-medium">Rooms</a>
+<a href="#culinary" class="text-gray-700 hover:text-primary transition-colors font-medium">Restaurant</a>
+<a href="#gallery" class="text-gray-700 hover:text-primary transition-colors font-medium">Photos</a>
+<a href="#story" class="text-gray-700 hover:text-primary transition-colors font-medium">Our Place</a>
+<a href="#blog" class="text-gray-700 hover:text-primary transition-colors font-medium">Journal</a>
+<button class="bg-primary text-white px-6 py-3 !rounded-button hover:bg-primary/90 transition-colors font-medium whitespace-nowrap w-full">Check Availability</button>
+</div>
+`;
+                    nav.appendChild(mobileMenu);
+                } else {
+                    const mobileMenu = nav.querySelector('.lg\\:hidden.bg-white');
+                    if (mobileMenu) {
+                        mobileMenu.remove();
+                    }
+                }
+            });
+        });
+    </script>
+    <script id="smooth-scroll">
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('a[href^="#"]');
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    if (targetElement) {
+                        const offsetTop = targetElement.offsetTop - 80;
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+    <script id="booking-interactions">
+        document.addEventListener('DOMContentLoaded', function() {
+            const bookingButtons = document.querySelectorAll('button');
+            bookingButtons.forEach(button => {
+                if (button.textContent.includes('Check Availability') ||
+                    button.textContent.includes('Book') ||
+                    button.textContent.includes('Reserve')) {
+                    button.addEventListener('click', function() {
+                        alert('Booking system integration - WordPress Bellevue theme booking functionality would be implemented here');
+                    });
+                }
+            });
+        });
+    </script>
+    <script>
+        ! function(t, e) {
+            var o, n, p, r;
+            e.__SV || (window.posthog = e, e._i = [], e.init = function(i, s, a) {
+                function g(t, e) {
+                    var o = e.split(".");
+                    2 == o.length && (t = t[o[0]], e = o[1]), t[e] = function() {
+                        t.push([e].concat(Array.prototype.slice.call(arguments, 0)))
+                    }
+                }(p = t.createElement("script")).type = "text/javascript", p.crossOrigin = "anonymous", p.async = !0, p.src = s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") + "/static/array.js", (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r);
+                var u = e;
+                for (void 0 !== a ? u = e[a] = [] : a = "posthog", u.people = u.people || [], u.toString = function(t) {
+                        var e = "posthog";
+                        return "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e
+                    }, u.people.toString = function() {
+                        return u.toString(1) + ".people (stub)"
+                    }, o = "init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "), n = 0; n < o.length; n++) g(u, o[n]);
+                e._i.push([i, s, a])
+            }, e.__SV = 1)
+        }(document, window.posthog || []);
+        posthog.init('phc_t9tkQZJiyi2ps9zUYm8TDsL6qXo4YmZx0Ot5rBlAlEd', {
+            api_host: 'https://us.i.posthog.com',
+            autocapture: false,
+            capture_pageview: false,
+            capture_pageleave: false,
+            capture_performance: {
+                web_vitals: false,
+            },
+            rageclick: false,
+        })
+        window.shareKey = 'Hp2dS7UXs24Gb2zKvJI-hA';
+        window.host = /*'readdy.ai'*/;
+    </script>
+   </script>
+</body>
+
+</html>
